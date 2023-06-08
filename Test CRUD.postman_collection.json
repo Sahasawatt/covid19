@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "90bb2c6b-1bbc-4cec-a7e9-74f0827b04ac",
+		"name": "Test CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24104097",
+		"_collection_link": "https://cloudy-crescent-561610.postman.co/workspace/Team-Workspace~03b66337-bb16-4e6c-88bc-19efa5f96b98/collection/24104097-90bb2c6b-1bbc-4cec-a7e9-74f0827b04ac?action=share&creator=24104097&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "surname",
+							"value": "Wittayaprasit",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0829959445",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sahasawattee@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "396 phetkaseam 77/8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/addUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Sahasawat",
+							"type": "text"
+						},
+						{
+							"key": "surname",
+							"value": "Wittayaprasit",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0895335551",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sahasawattee@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "333",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "no infect",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/updateUser?id=7",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updateUser"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "19",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/deleteUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deleteUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
